@@ -65,9 +65,9 @@ min_pwr = input('minimum rxpower if the antenna is pointed at the router: ')
 min_pwr = float(min_pwr)
 while(True):
     f = open("./tmp/csv-01.csv")
-    pwr = f.readline().split(",")
-    pwr = f.readline().split(",")
-    pwr = f.readline().split(",")[8].strip()
+#    pwr = f.readline().split(",")
+#    pwr = f.readline().split(",")
+    pwr = f.readline().split(",")[4].strip()
     pwr = float(pwr)
     FlushSock()
     while(not exit):
