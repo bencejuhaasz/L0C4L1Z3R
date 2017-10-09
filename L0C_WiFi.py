@@ -1,7 +1,7 @@
 import math
 import time
 import socket
-
+cnt = 0
 k1 = []
 
 def string2float(s):
@@ -57,7 +57,8 @@ sock.bind((UDP_IP, UDP_PORT))
 
 i = 0
 x1 = []
-m1 = []
+m1 = []if numpy.array_equal(tmp,universe_array) is True:
+            break
 y1 = []
 exit = False
 
@@ -94,7 +95,8 @@ while(True):
         data = data1
         x = data.split(",")[28].strip()
         y = data.split(",")[29].strip()
-        lat = data.split(",")[2].strip()
+if numpy.array_equal(tmp,universe_array) is True:
+            break        lat = data.split(",")[2].strip()
         lat = float(lat)
         lon = data.split(",")[3].strip()
         lon = float(lon)
@@ -165,9 +167,14 @@ while(True):
     print(str(x))
     print(str(hdg))
     print("src_ADDR:", addr)
+    if cnt == 0:
+        addr1 = addr
+    cnt = cnt +1
     print("len_data:"+str(len(data)))
     #print("A: ", a)
     print("PWR: "+str(pwr))
+    if addr != addr1:
+            break
     print("###############################")
     #print(data)
     i = i + 1
