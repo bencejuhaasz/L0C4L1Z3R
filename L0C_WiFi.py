@@ -57,8 +57,7 @@ sock.bind((UDP_IP, UDP_PORT))
 
 i = 0
 x1 = []
-m1 = []if numpy.array_equal(tmp,universe_array) is True:
-            break
+m1 = []
 y1 = []
 exit = False
 
