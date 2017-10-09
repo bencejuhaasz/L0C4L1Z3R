@@ -94,8 +94,7 @@ while(True):
         data = data1
         x = data.split(",")[28].strip()
         y = data.split(",")[29].strip()
-if numpy.array_equal(tmp,universe_array) is True:
-            break        lat = data.split(",")[2].strip()
+        lat = data.split(",")[2].strip()
         lat = float(lat)
         lon = data.split(",")[3].strip()
         lon = float(lon)
